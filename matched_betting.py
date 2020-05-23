@@ -47,7 +47,6 @@ def free_bet(inputs):
 
 def request_input(type):
   """ Get user input of bet values. Returns dict of mapped values. """
-  print 'request input'
   inputs = {}
   if type == '-qual' or type == '-q' \
   or type == '-free' or type == '-f':
@@ -96,7 +95,6 @@ def main():
     
   # Check bet type and call appropriate function  
   if bet_type == '-q' or bet_type =='-qual':
-    print 'Qualifying bet'
     qualify_bet(inputs)
   elif bet_type == '-f' or bet_type == '-free':
     free_bet(inputs)
